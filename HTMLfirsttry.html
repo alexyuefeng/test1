@@ -9,10 +9,20 @@ h1 {
 	font-size: 50px;
 	font-family:verdana;
 }
-h2{
-	color: DodgerBlue;
-	font-size: 30px;
+
+p.kinds{
+	font-size: 35px;
+	font-family: verdana;
 }
+table{
+	border-collapse: collapse;
+	width:60%
+}
+td,th {
+	border: 1px solid;
+	padding: 7px;
+}
+
 </style>
 
 </head>
@@ -20,6 +30,7 @@ h2{
 
 <h1><i>Cars on My List<sub>1.0</sub></i></h1>
 <p title="maybe not, move your mouse away!">More functionality will be updated if I got time to learn more:P</p>
+
 <p>-A useful leasing deal finder:</p>
 <a href="https://leasehackr.com/blog/category/Latest+Deals" target="_blank">
 <img src="leasehackr.png" alt="leasehackr link" width="130" height="140">
@@ -31,24 +42,45 @@ h2{
 </a>
 
 <hr>
-<h2>Sedan</h2>
+<p class="kinds">Sedan</p>
 
-<p style="color:rgba(255,99,71,0.5);"><b><del>GET THAT 45TFPI!!!!!!!!</del></b></p>
+<!------<p style="color:rgba(255,99,71,0.5);"><b><del>GET THAT 45TFPI!!!!!!!!</del></b></p>----->
+
 <button type= "button" onclick="document.getElementById('A4Image').src='audi_a4_200.jpg'">prev</button>
-<img id="A4Image" src="audi_a4_200.jpg" alt="A4_pic" style="width:1000px">
+	<img id="A4Image" src="audi_a4_200.jpg" alt="A4_pic" style="width:1000px">
 <button type= "button" onclick="document.getElementById('A4Image').src='audi_a4_108.jpg'">Next</button>
 <blockquote cite="https://www.audiusa.com/models/audi-a4">
-<ul>
-	<li>Horsepower/Torque: 248 hp/273 lb-ft</li>
-	<li>Engine Type: Turbocharged 2.0-liter</li>
-	<li>Drivetrain: Front-wheel/Quattro<sup>R</sup> all-wheel drive</li>
-	<li>Accerleration: 0-60 mph in 7.1/5.6 sec. (40/45TFPI)</li>
-</ul>
+
+<table>
+	<!-----<caption>Specification</caption>------>
+	<tr>
+	<th colspan="4" style="background-color:black; color:white; border-color:black">Specification</th>
+	</tr>
+	<tr>
+		<th>Engine Type</th>
+		<th>Horsepower/Torque</th>
+		<th>Drivetrain</th>
+		<th>Accerleration (0-60mph)</th>
+	</tr>
+	<tr>
+		<td>2.0t four-cylinder @40 TFSI</td>
+		<td>188 hp/236 lb-ft</td>
+		<td>Dual-clutch automatic front-wheel drive</td>
+		<td>7.1 seconds</td>
+	</tr>
+	<tr>
+		<td>2.0t four-cylinder @45 TFSI</td>
+		<td>248 hp/273 lb-ft</td>
+		<td>Dual-clutch automatic quattro all-wheel drive</td>
+		<td>5.6 seconds</td>
+	</tr>
+</table>
+
 </blockquote>
  <a href="https://www.audiusa.com/models/audi-a4" target="_blank">BuyMeLink</a>
  
  
-<h2>HatchBack</h2>
+<p class="kinds">HatchBack</p>
 
 
 

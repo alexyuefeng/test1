@@ -1,0 +1,72 @@
+Block-level Elements vs. Inline Elements:
+https://www.w3schools.com/html/html_blocks.asp
+block-level: starts on a new line and takes up the full line available
+inline element: like its name
+Examples-> <div> - sometimes used to saparate( or do some specifications on) a block of content
+
+		<div style="something">
+		....
+		</div>
+
+	    <span>  -sometimes used to saparate( or format) some characters
+
+		<p>Hello <span style="">World</span></p>
+
+
+Format:
+	<br> -newline
+	<strong>/<b>  -strong/bold
+	<em>/<i>      -italic
+	<small>       -small
+	<mark>        -highlighted (maybe implements by background color with fixed color)
+	<del>         -deleted word
+	<ins>         -underline
+	<sub>/<sup>   -subscript/superscript
+
+Link:
+	<a href="website URL" target="_blank">
+	<img src="something" alt="something" width="" height="">  OR  word description
+	</a>
+
+List:
+	-ordered list
+	<ol>
+		<li></li>
+	</ol>
+
+	-unordered list
+	<ul>
+		<li></li>
+	</ul>
+
+	-description list
+	<dl>
+		<dt>description title</dt>
+		<dd>description detail</dd>
+		<dt>description title</dt>
+		<dd>description detail</dd>
+	</dl>
+
+
+Table:
+table{
+	border-collapse: collapse;
+	width: some%
+}
+td, th{
+	border: #px solid;
+	padding: #px;
+}
+
+	<table>
+		<tr>
+		<th>table header</th>
+		<th>second header</th>
+		</tr>
+		
+		<tr>
+		<td>first col second row</td>
+		<td>second col second row</td>
+		</tr>
+	</table>
+for colspan:       <th colspan="#colspan">Span Title</th>
