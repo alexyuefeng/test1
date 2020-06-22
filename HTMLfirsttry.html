@@ -108,6 +108,24 @@ td,th {
 	</tr>
 </table>
 </blockquote>
+<br>
+<button id="b1" type="button" onclick="showWeb()">Open official web here</button>
+<iframe id="web@Honda" src="https://automobiles.honda.com/civic-type-r" style="border:2px; height:600px;width:900px;display:none;"></iframe>
+
+<script>
+function showWeb(){
+	document.getElementById("web@Honda").style.display="block";
+	document.getElementById("b1").innerHTML = "Hide Web";
+	document.getElementById("b1").setAttribute("onClick", "hideWeb()");
+}
+function hideWeb(){
+	document.getElementById("web@Honda").style.display="none";
+	document.getElementById("b1").innerHTML = "Open official web here";
+	document.getElementById("b1").setAttribute("onClick", "showWeb()");
+}
+
+</script>
+
 
 <hr>
 <p class="kinds">Coupe</p>

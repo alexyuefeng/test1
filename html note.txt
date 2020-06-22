@@ -70,3 +70,23 @@ td, th{
 		</tr>
 	</table>
 for colspan:       <th colspan="#colspan">Span Title</th>
+
+iframe:
+<iframe id="" src="" style=""></iframe>
+
+button:
+<button type="button" id="" onclick="someFun()"/line of JS code   style="">
+Description Word on button
+</button>
+
+using JS to change button behaviors:
+<script>
+function myFuntion(){
+	document.getElementById("id").style.display="none/block";      ------>change display
+	document.getElementById("id").innerHTML = "some text";         ------>change button description
+	document.getElementById("id").setAttribute("onClick", "otherFun()");    -----> change what the button do
+}
+function otherFun(){
+	document.getElementById("id").setAttribute("onClick", "myFunction()");   ------>going back so one button can do multiple things
+}
+</script>
